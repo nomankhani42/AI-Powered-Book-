@@ -4,6 +4,9 @@ dist/
 build/
 *.log
 .env*
+playwright-report/
+test-results/
+coverage/
 
 # Python
 __pycache__/
@@ -27,3 +30,8 @@ Thumbs.db
 .env.local
 *.key
 *.pem
+
+# Project history and specs (development artifacts)
+history/
+specs/
+.specify/
