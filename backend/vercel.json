@@ -11,9 +11,5 @@
       "src": "/(.*)",
       "dest": "main.py"
     }
-  ],
-  "env": {
-    "QDRANT_MODE": "remote"
-  },
-  "envFile": [".env.production"]
+  ]
 }
