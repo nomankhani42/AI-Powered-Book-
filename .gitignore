@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+dist/
+build/
+*.log
+.env*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+
+# Universal
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Local config files with secrets
+.gemini/settings.json
+.claude/settings.local.json
+.env.local
+*.key
+*.pem

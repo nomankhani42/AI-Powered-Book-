@@ -1,20 +1,29 @@
-<!--
 ---
-Sync Impact Report
+id: 1
+title: Amend Constitution for Physical AI Book
+stage: constitution
+date: 2025-12-02
+surface: agent
+model: gemini-1.5-pro
+feature: none
+branch: main
+user: unspecified
+command: /sp.constitution
+labels: [constitution, project-scoping]
+links:
+  spec: null
+  ticket: null
+  adr: null
+  pr: null
+files:
+ - .specify/memory/constitution.md
+tests:
+ - none
 ---
-- **Version Change**: 0.0.0 → 1.0.0
-- **Change Type**: MAJOR (Complete rewrite)
-- **Summary**: The constitution was completely rewritten to reflect a new vision, purpose, scope, and architecture for the "Physical AI & Humanoid Robotics" interactive book project. The previous placeholder principles have been replaced with specific project details.
-- **Modified Principles**: All principles replaced.
-- **Templates Requiring Updates**:
-  - ✅ `.specify/templates/plan-template.md` (No update needed, generic)
-  - ✅ `.specify/templates/spec-template.md` (No update needed, generic)
-  - ✅ `.specify/templates/tasks-template.md` (No update needed, generic)
-- **Follow-up TODOs**:
-  - `TODO(RATIFICATION_DATE)`: The original adoption date needs to be set.
--->
 
-# PROJECT CONSTITUTION
+## Prompt
+
+/sp.constitution # PROJECT CONSTITUTION  
 **Physical AI & Humanoid Robotics – The Complete Interactive Book + Embedded RAG Chatbot**
 
 ## Vision & Purpose
@@ -69,7 +78,26 @@ flowchart TD
     H[Context7 MCP] -->|.use context7| I[Every Code Generation Step]
 ```
 
-## Governance
-This constitution is the single source of truth for project scope, architecture, and technical execution. All development work, specifications, and plans must adhere to these principles. Amendments require a documented proposal and approval, and the version must be incremented according to semantic versioning.
+## Response snapshot
 
-**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Set original adoption date. | **Last Amended**: 2025-12-02
+I have updated the project constitution to version 1.0.0. This was a major update, replacing the placeholder template with the detailed project vision, scope, and architecture you provided.
+
+I have also created a Prompt History Record (PHR) for this action: `history/prompts/constitution/1-amend-constitution-for-physical-ai-book.constitution.prompt.md`.
+
+Suggested commit message:
+`docs: amend constitution to v1.0.0 (project initialization)`
+
+## Outcome
+
+- ✅ Impact: Major. The project constitution was completely rewritten, establishing the foundational principles for the project.
+- 🧪 Tests: None. This was a documentation change.
+- 📁 Files: 1 file modified: `.specify/memory/constitution.md`.
+- 🔁 Next prompts: The user may want to proceed with creating a spec, plan, or tasks based on the new constitution.
+- 🧠 Reflection: The user provided a very detailed constitution, which made the update straightforward. The process of checking the other templates for consistency is a good practice to ensure the project's documentation stays in sync.
+
+## Evaluation notes (flywheel)
+
+- Failure modes observed: The `create-phr.sh` script was not found, requiring a fallback to the agent-native PHR creation flow. This indicates a potential mismatch between the documented and actual project scripts.
+- Graders run and results (PASS/FAIL): N/A
+- Prompt variant (if applicable): N/A
+- Next experiment (smallest change to try): N/A

@@ -1,0 +1,106 @@
+.chatWindow {
+  position: fixed;
+  bottom: 80px; /* Above the toggle button */
+  right: 20px;
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Below the toggle button */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatHeader {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 10px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  display: flex; /* Added for alignment */
+  justify-content: space-between; /* Added for alignment */
+  align-items: center; /* Added for alignment */
+}
+
+.chatCloseButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatCloseButton:hover {
+  color: #f0f0f0;
+}
+
+.chatMessages {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+}
+
+.message {
+  padding: 8px 12px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.aiMessage {
+  background-color: #e0e0e0;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.userMessage {
+  background-color: var(--ifm-color-info);
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chatInputContainer {
+  display: flex;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+  background-color: white;
+}
+
+.chatInput {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+.chatInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.sendButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.sendButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}

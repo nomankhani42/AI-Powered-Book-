@@ -1,0 +1,73 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "Main" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "My Site Logo AI Powered Book" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "My Site Logo" [ref=e9]
+          - generic [ref=e10]: AI Powered Book
+        - link "Book" [ref=e11] [cursor=pointer]:
+          - /url: /docs/modules/module1/chapter1
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Learning Path" [ref=e13] [cursor=pointer]:
+          - /url: /learning-path
+      - generic [ref=e14]:
+        - link "GitHub(opens in new tab)" [ref=e15] [cursor=pointer]:
+          - /url: https://github.com/facebook/docusaurus
+          - text: GitHub
+          - img "(opens in new tab)" [ref=e16]
+        - button "Switch between dark and light mode (currently system mode)" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+  - main [ref=e23]:
+    - generic [ref=e25]:
+      - heading "This page crashed." [level=1] [ref=e26]
+      - button "Try again" [ref=e28] [cursor=pointer]
+      - separator [ref=e29]
+      - paragraph [ref=e31]: can't access property "week", doc.frontMatter is undefined
+  - contentinfo [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: Docs
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "Book" [ref=e39] [cursor=pointer]:
+                - /url: /docs/modules/module1/chapter1
+        - generic [ref=e40]:
+          - generic [ref=e41]: Community
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Stack Overflow(opens in new tab)" [ref=e44] [cursor=pointer]:
+                - /url: https://stackoverflow.com/questions/tagged/docusaurus
+                - text: Stack Overflow
+                - img "(opens in new tab)" [ref=e45]
+            - listitem [ref=e47]:
+              - link "Discord(opens in new tab)" [ref=e48] [cursor=pointer]:
+                - /url: https://discordapp.com/invite/docusaurus
+                - text: Discord
+                - img "(opens in new tab)" [ref=e49]
+            - listitem [ref=e51]:
+              - link "X(opens in new tab)" [ref=e52] [cursor=pointer]:
+                - /url: https://x.com/docusaurus
+                - text: X
+                - img "(opens in new tab)" [ref=e53]
+        - generic [ref=e55]:
+          - generic [ref=e56]: More
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - link "Blog" [ref=e59] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e60]:
+              - link "GitHub(opens in new tab)" [ref=e61] [cursor=pointer]:
+                - /url: https://github.com/facebook/docusaurus
+                - text: GitHub
+                - img "(opens in new tab)" [ref=e62]
+      - generic [ref=e65]: Copyright © 2025 AI Powered Book. Built with Docusaurus.
+```
